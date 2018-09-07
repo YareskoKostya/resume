@@ -209,11 +209,11 @@
             }
             var y = 0;
             function addWork() {
-                if (x < 5) {
-                    var str4 = '<table style="position: relative; left: 45px"><tr><td align="right">Дата начала работы:</td><td><input class="form-control" type="date" name="datebeginwork' + (x + 1) + '"></td></tr><tr><td align="right">Дата окончания работы:</td>';
-                    var str5 = '<td><input class="form-control" type="date" name="dateendwork' + (x + 1) + '"></td></tr><tr><td align="right">Место работы:</td><td><input class="form-control" type="text" name="workname' + (x + 1) + '"></td></tr>';
-                    var str6 = '<tr><td align="right">Специальность:</td><td><input class="form-control" type="text" name="professionwork' + (x + 1) + '"></td></tr></table><div id="inputwork' + (x + 1) + '"></div>';
-                    document.getElementById('inputwork' + x).innerHTML = str4 + str5 + str6;
+                if (y < 5) {
+                    var str4 = '<table style="position: relative; left: 45px"><tr><td align="right">Дата начала работы:</td><td><input class="form-control" type="date" name="datebeginwork' + (y + 1) + '"></td></tr><tr><td align="right">Дата окончания работы:</td>';
+                    var str5 = '<td><input class="form-control" type="date" name="dateendwork' + (y + 1) + '"></td></tr><tr><td align="right">Место работы:</td><td><input class="form-control" type="text" name="workname' + (y + 1) + '"></td></tr>';
+                    var str6 = '<tr><td align="right">Специальность:</td><td><input class="form-control" type="text" name="professionwork' + (y + 1) + '"></td></tr></table><div id="inputwork' + (y + 1) + '"></div>';
+                    document.getElementById('inputwork' + y).innerHTML = str4 + str5 + str6;
                     y++;
                 } else
                 {
