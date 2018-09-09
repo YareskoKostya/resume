@@ -87,7 +87,6 @@
 
                     </td>
                 </tr>
-
                 <tr>
                     <td align="right">
                         Дата начала обучения:
@@ -131,7 +130,6 @@
             </table>
             <div id="inputstudy0"></div>
             <button style="position: relative; left: 130px" type="button" class="btn btn-primary" onclick="addStudy()">Добавить ещё</button>
-
             <table style="position: relative; left: 45px">
                 <tr>
                     <td colspan="2" align="center">
@@ -194,7 +192,7 @@
         <script>
             var x = 0;
             function addStudy() {
-                if (x < 5) {
+                if (x < 4) {
                     var str1 = '<table><tr><td align="right">Дата начала обучения:</td><td><input class="form-control" type="date" name="datebeginstudy' + (x + 1) + '"></td></tr><tr><td align="right">Дата окончания обучения:</td>';
                     var str2 = '<td><input class="form-control" type="date" name="dateendstudy' + (x + 1) + '"></td></tr><tr><td align="right">Название учебного заведения:</td><td><input class="form-control" type="text" name="studyname' + (x + 1) + '"></td></tr>';
                     var str3 = '<tr><td align="right">Специальность:</td><td><input class="form-control" type="text" name="professionstudy' + (x + 1) + '"></td></tr><tr><td align="right">Степень:</td><td><input class="form-control" type="text" name="doctor' + (x + 1) + '"></td></tr></table><div id="inputstudy' + (x + 1) + '"></div>';
@@ -207,7 +205,7 @@
             }
             var y = 0;
             function addWork() {
-                if (y < 5) {
+                if (y < 4) {
                     var str4 = '<table style="position: relative; left: 45px"><tr><td align="right">Дата начала работы:</td><td><input class="form-control" type="date" name="datebeginwork' + (y + 1) + '"></td></tr><tr><td align="right">Дата окончания работы:</td>';
                     var str5 = '<td><input class="form-control" type="date" name="dateendwork' + (y + 1) + '"></td></tr><tr><td align="right">Место работы:</td><td><input class="form-control" type="text" name="workname' + (y + 1) + '"></td></tr>';
                     var str6 = '<tr><td align="right">Специальность:</td><td><input class="form-control" type="text" name="professionwork' + (y + 1) + '"></td></tr></table><div id="inputwork' + (y + 1) + '"></div>';
